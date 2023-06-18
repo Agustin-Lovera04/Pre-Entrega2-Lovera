@@ -58,8 +58,8 @@ function op3(){
     let categoria
     let articulosFiltrados
     do {
-    categoria = prompt("Seleccone Categoria:\nCalzado\nAccesorios\nIndumentaria")
-    articulosFiltrados = articulos.filter(articulo => articulo.categoria === categoria);if(articulosFiltrados.length > 0){alert(controlStock(articulosFiltrados))}
+    categoria = prompt("Seleccione Categoria:\nCalzado\nAccesorios\nIndumentaria")
+    articulosFiltrados = articulos.filter(articulo => articulo.categoria == categoria.toLowerCase());if(articulosFiltrados.length > 0){alert(controlStock(articulosFiltrados))}
     else{alert("CATEGORIA INVALIDA")}
     } while (categoria === "")  
 }
